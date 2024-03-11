@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/beautiful-background-of-white-and-pink-roses.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  max-width: 30vw;
+  max-height: 50vh;
+  min-width: 30vh;
+
+  background-image: url(https://html5book.ru/wp-content/uploads/2017/01/photo-roses.jpg);
+  background-size: cover;
+}
+
+.wrapper:before {
+  background: linear-gradient(
+    to right bottom,
+    rgba(43, 44, 78, 0.5),
+    rgba(104, 22, 96, 0.5)
+  );
+}
+
+.form-inner {
+  position: relative;
+  padding: 20px 20px;
+  margin: 20px auto;
+}
+
+.form-inner label {
+  display: block;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form-inner input {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  margin: 10px 0 15px;
+  border-width: 0;
+  line-height: 40px;
+  border-radius: 20px;
+  color: white;
+  background: rgba(255, 252, 252, 0.2);
+  font-family: "Roboto", sans-serif;
+}
+
+.form-inner input[type="submit"] {
+  background: #ee178dcd;
+}
