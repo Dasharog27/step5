@@ -22,10 +22,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  max-width: 30vw;
-  max-height: 50vh;
-  min-width: 30vh;
-
+    box-sizing:border-box;
+    max-width: 410px;
+    max-height: 330px;
+    /* min-width: 300px; */
   background-image: url(https://html5book.ru/wp-content/uploads/2017/01/photo-roses.jpg);
   background-size: cover;
 }
@@ -41,7 +41,7 @@ body {
 .form-inner {
   position: relative;
   padding: 20px 20px;
-  margin: 20px auto;
+  margin: 20px auto;  
 }
 
 .form-inner label {
